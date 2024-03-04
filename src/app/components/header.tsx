@@ -11,7 +11,7 @@ export default function Header() {
     {name: "Contact", link: "#contact"},]
 
     return (
-      <div className="sticky top-6 flex flex-row w-full px-24 h-16">
+      <div className="sticky top-0 md:top-6 flex flex-row w-full rounded bg-white/75 backdrop-blur-2xl px-4 md:px-24 h-16 z-40">
         <div className="flex flex-col h-full justify-center">
             <Image
                 alt=""
@@ -21,7 +21,16 @@ export default function Header() {
                 className="h-auto w-48"
             />
         </div>
-        <div className="w-full flex flex-row justify-end gap-10">
+        <div className="w-full md:hidden flex flex-row justify-end">
+            <div className="h-full flex flex-col justify-center">
+                <div className="grid place-items-center w-7 h-7 rounded-full border border-black cursor-pointer hover:shadow-md">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-list w-4 h-4 fill-black" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div className="w-full hidden md:flex flex-row justify-end gap-10">
             {
                 arrHead?.map((value) => (
                     <div className="flex flex-col justify-center h-full">
