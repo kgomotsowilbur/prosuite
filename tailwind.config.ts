@@ -14,6 +14,28 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    fontFamily: {
+      sans: ['var(--font-inter)'],
+      mono: ['var(--font-roboto-mono)'],
+      montserrat: ['var(--font-montserrat)'],
+      opensans: ['var(--font-open-sans)']
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+      'suite': '#91BC4D',
+      'blue': '#2E6CA8',
+      'lightblue': '#54B9ED',
+      'grey': '#B5B5B6',
+    },
   },
   plugins: [],
 };

@@ -2,7 +2,15 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-montserrat"
+});
+
+const openSans = Inter({ 
+  subsets: ["latin"], 
+  variable: "--font-open-sans"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.className}, ${openSans.className}`}>
+        {children}
+      </body>
     </html>
   );
 }
