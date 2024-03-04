@@ -25,7 +25,7 @@ export default function Header() {
             {
                 arrHead?.map((value) => (
                     <div className="flex flex-col justify-center h-full">
-                        <Link href={value.link} className="font-montserrat font-bold text-base hover:text-lg">{value.name}</Link>
+                        <Link href={value.link} className="font-montserrat font-bold text-base hover:text-lg text-black">{value.name}</Link>
                     </div>
                 ))
             }

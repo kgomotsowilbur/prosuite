@@ -19,19 +19,19 @@ export default function Solutions() {
                 <h1 className="border-l-8 pl-1 border-suite gradientText text-4xl font-bold">Our</h1>
                 <h1 className="gradientText text-4xl font-normal">Solutions</h1>
             </div>
-            <div className="flex flex-col justify-center h-full">
-                <div className="grid grid-cols-3 w-full gap-6">
+            <div className="flex flex-col justify-center h-full w-full">
+                <div className="grid grid-cols-3 h-full w-full gap-4 pt-12">
                     {
                         arrSolutions?.map((sol, index) => (
-                            <div className="flex flex-row gap-4">
-                                <div className="flex flex-col gap-4">
+                            <div className="flex flex-row gap-2 h-40">
+                                <div className="flex flex-col gap-3">
                                     <h1 className="font-opensans font-bold gradientText text-2xl">{sol.title}</h1>
                                     <h1 className="font-opensans text-grey text-base">{sol.paragraph}</h1>
                                     <LearnMoreButton/>
                                 </div>
                                 {index !== 2 && index !== 5 &&
                                     <div className="flex flex-col justify-center h-full w-0.5">
-                                        <div className="h-[70%] bg-grey w-full"></div>
+                                        <div className="h-[60%] bg-grey w-0.5"></div>
                                     </div>
                                 }
                             </div>
