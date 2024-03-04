@@ -9,9 +9,6 @@
 }
 
 .gradientText {
-  font-size: 96px;
-  font-weight: 700;
-  line-height: 88px;
   background: linear-gradient(#54B9ED, #2E6CA8); /* Customize your gradient colors */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

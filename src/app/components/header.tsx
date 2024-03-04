@@ -16,16 +16,16 @@ export default function Header() {
             <Image
                 alt=""
                 src="/logo.png"
-                width={190}
-                height={110}
-                className="h-auto w-auto"
+                width={199}
+                height={70}
+                className="h-auto w-48"
             />
         </div>
         <div className="w-full flex flex-row justify-end gap-10">
             {
                 arrHead?.map((value) => (
                     <div className="flex flex-col justify-center h-full">
-                        <Link href={value.link} className="font-montserrat font-bold font-base">{value.name}</Link>
+                        <Link href={value.link} className="font-montserrat font-bold text-base hover:text-lg">{value.name}</Link>
                     </div>
                 ))
             }
