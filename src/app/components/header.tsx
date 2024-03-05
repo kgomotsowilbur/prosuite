@@ -14,7 +14,7 @@ export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-      <div className="sticky relative top-0 md:top-6 flex flex-row w-full rounded bg-white/75 backdrop-blur-2xl px-4 md:px-8 xl:px-24 h-16 z-40">
+      <div className="sticky relative top-0 md:top-6 flex flex-row w-full rounded bg-white/75 backdrop-blur-2xl px-4 md:px-8 lg:px-24 h-16 z-40">
         <div className="flex flex-col h-full justify-center">
             <Image
                 alt=""
@@ -54,7 +54,7 @@ export default function Header() {
             </div>
         }
         {/* medium to big screens links */}
-        <div className="w-full hidden md:flex flex-row justify-end gap-4 xl:gap-10">
+        <div className="w-full hidden md:flex flex-row justify-end gap-4 lg:gap-10">
             {
                 arrHead?.map((value, index) => (
                     <div key={index} className="flex flex-col justify-center h-full">
