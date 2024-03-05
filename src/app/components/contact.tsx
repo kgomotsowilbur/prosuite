@@ -7,9 +7,9 @@ export default function Contact() {
     return (
       <div className="w-full h-full flex flex-col pt-2 md:pt-4">
         {/* Green section */}
-        <div className="w-full md:h-32 flex flex-col md:flex-row bg-suite px-4 md:px-24 py-2 md:py-0 gap-2 md:gap-0">
+        <div className="w-full md:h-32 flex flex-col md:flex-row bg-suite px-4 md:px-8 xl:px-24 py-2 xl:py-0 gap-2 md:gap-0">
             <div className="h-full flex flex-col justify-center w-[80%]">
-                <h1 className="text-2xl md:text-4xl text-white font-bold">We'd love to show you how our solution works</h1>
+                <h1 className="text-2xl md:text-3xl xl:text-4xl text-white font-bold">We'd love to show you how our solution works</h1>
             </div>
             <div className="flex flex-row justify-end w-full md:w-[20%]">
                 <div className="flex flex-col h-full justify-center">
@@ -18,20 +18,21 @@ export default function Contact() {
             </div>
         </div>
         {/* Blue section */}
-        <div className="w-full h-full flex flex-col bg-gradient-to-b from-lightblue to-blue px-4 md:px-24 pt-6 md:pt-14 pb-3 md:pb-6 gap-8 md:gap-0">
+        <div className="w-full h-full flex flex-col bg-gradient-to-b from-lightblue to-blue px-4 md:px-8 xl:px-24 pt-6 xl:pt-14 pb-3 xl:pb-6 gap-8 md:gap-0">
             {/* Top section */}
-            <div className="flex flex-wrap md:flex-row w-full gap-6 md:gap-14">
-                <div className="flex flex-col gap-1 md:gap-2 w-96 md:w-fit">
+            <div className="flex flex-wrap w-full gap-6 xl:gap-14">
+                <div className="flex flex-col gap-1 md:gap-2 w-96 md:w-64 xl:w-fit">
                     <Image
                         alt=""
                         src="/logo2.png"
                         width={149}
                         height={53}
-                        className="h-auto md:h-[53px] w-[120px] md:w-36"
+                        className="h-auto md:h-auto w-[120px] md:w-36"
                     />
-                    <p className="font-opensans text-xs md:text-sm font-normal text-white">ProSuite is a suite of cloud-based platforms which<br/>aims at transforming and automating enterprise<br/>tasks. Our solutions focus on user experience and<br/>easy-to-use tools including Asset Management, Risk<br/>Management and Perfomance Management.</p>
+                    <p className="hidden xl:flex font-opensans text-sm font-normal text-white">ProSuite is a suite of cloud-based platforms which<br/>aims at transforming and automating enterprise<br/>tasks. Our solutions focus on user experience and<br/>easy-to-use tools including Asset Management, Risk<br/>Management and Perfomance Management.</p>
+                    <p className="flex xl:hidden font-opensans text-xs md:text-sm font-normal text-white">ProSuite is a suite of cloud-based platforms which aims at transforming and automating enterprise tasks. Our solutions focus on user experience and easy-to-use tools including Asset Management, Risk Management and Perfomance Management.</p>
                 </div>
-                <div className="w-96 md:w-fit flex flex-row md:gap-14">
+                <div className="w-96 md:w-fit flex flex-row md:gap-6 xl:gap-14">
                     <div className="flex flex-col gap-1 md:gap-2 w-1/2 md:w-fit">
                         <div className="w-[50%] md:h-[53px] w-full flex">
                             <h1 className="text-sm md:text-base font-bold text-white">Services</h1>
@@ -55,7 +56,7 @@ export default function Contact() {
             {/* bottom section */}
             <div className="flex flex-col h-full w-full justify-end">
                 <div className="flex flex-row w-full justify-start">
-                    <div className="flex flex-row gap-6 md:gap-14 w-full md:w-[60%]">
+                    <div className="flex flex-row gap-6 md:gap-14 w-full xl:w-[60%]">
                         <p className="font-montserrat text-xs md:text-sm font-normal text-white">2024 (c) ProSuite. All rights reserved.</p>
                         <p className="font-montserrat text-xs md:text-sm font-normal text-white">Privacy Policy</p>
                     </div>

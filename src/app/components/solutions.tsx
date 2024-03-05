@@ -19,11 +19,11 @@ export default function Solutions() {
                 <h1 className="border-l-4 md:border-l-8 pl-0.5 md:pl-1 border-suite gradientText text-3xl md:text-4xl font-bold">Our</h1>
                 <h1 className="gradientText text-3xl md:text-4xl font-normal">Solutions</h1>
             </div>
-            <div className="flex flex-col justify-center h-full w-full">
-                <div className="grid grid-cols-2 md:grid-cols-3 h-full w-full md:gap-4 md:pt-12">
+            <div className="flex flex-col md:justify-center h-full w-full">
+                <div className="grid grid-cols-2 md:grid-cols-3 xl:h-full w-full gap-y-4 md:gap-x-4 xl:pt-12">
                     {
                         arrSolutions?.map((sol, index) => (
-                            <div className="flex flex-row gap-1 md:gap-2 h-48 md:h-40">
+                            <div key={index} className="flex flex-row gap-1 md:gap-2 h-48 md:h-52 xl:h-40">
                                 {index === 1 &&
                                     <div className="flex md:hidden flex-col justify-center h-full w-2">
                                         <div className="flex bg-transparent w-2"></div>

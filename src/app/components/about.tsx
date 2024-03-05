@@ -9,8 +9,10 @@ export default function About() {
             <h1 className="border-l-4 md:border-l-8 pl-0.5 md:pl-1 border-suite gradientText text-3xl md:text-4xl font-bold">Why</h1>
             <h1 className="gradientText text-3xl md:text-4xl font-normal">ProSuite?</h1>
         </div>
-        <div className="hidden md:flex flex-row gap-4">
-           <AboutTiles/>
+        <div className="w-full h-full hidden md:flex flex-col justify-center">
+          <div className="flex flex-row gap-4">
+            <AboutTiles/>
+          </div>
         </div>
         <div className="flex flex-wrap md:hidden gap-2">
            <AboutTiles/>

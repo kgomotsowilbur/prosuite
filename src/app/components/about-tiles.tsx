@@ -12,15 +12,15 @@ export default function AboutTiles() {
     return (
         <>
             {
-                arrAbout.map((abt) => (
-                    <div className="rounded flex flex-col w-full md:h-full p-6 md:p-8 gap-2 md:gap-4 mix-blend-multiply shadow-md bg-white">
+                arrAbout.map((abt, index) => (
+                    <div key={index} className="rounded flex flex-col w-full md:h-full p-6 xl:p-8 gap-2 md:gap-4 mix-blend-multiply shadow-md bg-white">
                         <div className="flex flex-row justify-center w-full">
                             <Image
                                 alt=""
                                 src={"/pro2.png"}
-                                width={96.18}
+                                width={96}
                                 height={150}
-                                className="w-auto md:w-32 h-40 md:h-auto"
+                                className="w-auto md:w-20 xl:w-32 h-40 md:h-auto"
                             />
                         </div> 
                         <h1 className="text-center font-opensans font-bold text-grey text-xl md:text-2xl">{abt.title}</h1>
