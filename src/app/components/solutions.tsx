@@ -13,16 +13,16 @@ export default function Solutions() {
     ]
 
     return (
-        <div className="w-full h-auto pt-2 xl:pt-4 flex flex-col justify-center gap-2 xl:gap-4">
+        <div className="w-full h-auto pt-2 lg:pt-4 flex flex-col justify-center gap-2 lg:gap-4">
             <div className="w-full h-fit flex flex-row justify-center gap-1 md:gap-2">
                 <h1 className="border-l-4 md:border-l-8 pl-0.5 md:pl-1 border-suite gradientText text-3xl md:text-4xl font-bold">Our</h1>
                 <h1 className="gradientText text-3xl md:text-4xl font-normal">Solutions</h1>
             </div>
             <div className="flex flex-col w-full min-h-[40%] h-fit">
-                <div className="grid grid-cols-2 md:grid-cols-3 h-full w-full gap-y-2 md:gap-y-8 xl:gap-y-14 md:gap-x-4 xl:pt-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 h-full w-full gap-y-2 md:gap-y-8 lg:gap-y-14 md:gap-x-4 lg:pt-4">
                     {
                         arrSolutions?.map((sol, index) => (
-                            <div key={index} className="flex flex-row gap-1 md:gap-2 h-52 md:min-h-44 xl:h-40">
+                            <div key={index} className="flex flex-row gap-1 md:gap-2 h-52 md:min-h-44 lg:h-40">
                                 {/* space before every tile on the right side of the screen */}
                                 {index === 1 &&
                                     <div className="flex md:hidden flex-col justify-center h-full w-2">
@@ -40,13 +40,13 @@ export default function Solutions() {
                                     </div>
                                 }
                                 <div className="flex flex-col">
-                                    <div className="flex flex-col h-[30%] md:h-[35%] xl:h-[25%] md:w-[75%] xl:w-full justify-center">
+                                    <div className="flex flex-col h-[30%] md:h-[35%] lg:h-[25%] md:w-[75%] lg:w-full justify-center">
                                         <h1 className="font-opensans font-bold gradientText text-xl md:text-2xl">{sol.title}</h1>
                                     </div>
-                                    <div className="flex flex-col h-[50%] md:h-[40%] xl:h-fit">
+                                    <div className="flex flex-col h-[50%] md:h-[40%] lg:h-fit">
                                         <h1 className="font-opensans text-grey text-sm md:text-base">{sol.paragraph}</h1>
                                     </div>
-                                    <div className="flex flex-col h-[20%] md:h-[25%] xl:mt-4">
+                                    <div className="flex flex-col h-[20%] md:h-[25%] lg:mt-4">
                                         <LearnMoreButton/>
                                     </div>
                                 </div>
