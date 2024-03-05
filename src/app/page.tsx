@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <main className="max-w-screen min-h-screen flex flex-col">
       <Header/>
-      <div id="home" className="flex h-screen w-full -mt-16 pt-16 md:pt-20 xl:pt-24 px-4 md:px-8 xl:px-24">
+      <div id="home" className="flex min-h-screen w-full -mt-16 pt-16 md:pt-20 xl:pt-24 px-4 md:px-8 xl:px-24">
         <HomePage/>
       </div>
-      <div id="about" className="flex md:h-screen w-full pb-4 md:pb-0 pt-16 md:pt-20 xl:pt-24 px-4 md:px-8 xl:px-24">
+      <div id="about" className="flex min-h-screen md:h-screen w-full pb-4 md:pb-0 pt-16 md:pt-20 xl:pt-24 px-4 md:px-8 xl:px-24">
         <About/>
       </div>
-      <div id="solutions" className="flex h-[120vh] md:h-screen w-full pb-4 md:pb-0 pt-16 md:pt-20 xl:pt-24 px-4 md:px-8 xl:px-24">
+      <div id="solutions" className="flex min-h-screen md:h-screen w-full pt-16 md:pt-20 xl:pt-24 px-4 md:px-8 xl:px-24">
         <Solutions/>
       </div>
       <div id="contact" className="flex h-screen w-full pt-16 md:pt-20 xl:pt-24">

@@ -7,7 +7,7 @@ export default function Contact() {
     return (
       <div className="w-full h-full flex flex-col pt-2 md:pt-4">
         {/* Green section */}
-        <div className="w-full md:h-32 flex flex-col md:flex-row bg-suite px-4 md:px-8 xl:px-24 py-2 xl:py-0 gap-2 md:gap-0">
+        <div className="w-full md:h-32 flex flex-col md:flex-row bg-suite px-4 md:px-8 xl:px-24 py-2 xl:py-0 gap-2 xl:gap-0">
             <div className="h-full flex flex-col justify-center w-[80%]">
                 <h1 className="text-2xl md:text-3xl xl:text-4xl text-white font-bold">We'd love to show you how our solution works</h1>
             </div>
@@ -46,11 +46,12 @@ export default function Contact() {
                         <p className="font-opensans text-xs md:text-sm font-normal text-white">Home<br/><br/>About<br/><br/>Solutions<br/><br/>Contact<br/><br/>Request a Demo</p>
                     </div>
                 </div>
-                <div className="flex flex-col gap-1 md:gap-2 w-96 md:w-fit">
+                <div className="flex flex-col gap-1 md:gap-2 w-96 md:w-64 xl:w-fit">
                     <div className="md:h-[53px] w-full flex">
                         <h1 className="text-sm md:text-base font-bold text-white">Contact Us</h1>
                     </div>
-                    <p className="font-opensans text-xs md:text-sm font-normal text-white">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Lacinia morbi praesent nulla<br/>tempor sagittis. Curabitur donec cursus donec<br/>risrdum nullam orci sit dictum. Molestie nunc sed<br/>amet vulputate in. Condimentum mi massa id<br/>interdum risus, tortor nunc mauris.</p>
+                    <p className="hidden xl:flex font-opensans text-xs md:text-sm font-normal text-white">Lorem ipsum dolor sit amet, consectetur<br/>adipiscing elit. Lacinia morbi praesent nulla<br/>tempor sagittis. Curabitur donec cursus donec<br/>risrdum nullam orci sit dictum. Molestie nunc sed<br/>amet vulputate in. Condimentum mi massa id<br/>interdum risus, tortor nunc mauris.</p>
+                    <p className="flex xl:hidden font-opensans text-xs md:text-sm font-normal text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacinia morbi praesent nulla tempor sagittis. Curabitur donec cursus donec risrdum nullam orci sit dictum. Molestie nunc sed amet vulputate in. Condimentum mi massa id interdum risus, tortor nunc mauris.</p>
                 </div>
             </div>
             {/* bottom section */}
@@ -60,7 +61,7 @@ export default function Contact() {
                         <p className="font-montserrat text-xs md:text-sm font-normal text-white">2024 (c) ProSuite. All rights reserved.</p>
                         <p className="font-montserrat text-xs md:text-sm font-normal text-white">Privacy Policy</p>
                     </div>
-                    <div className="flex flex-row w-full justify-end">
+                    <div className="flex flex-row w-[40%] w-full justify-end">
                         <div className="flex flex-row gap-2 gap-3">
                             <div className="grid place-items-center w-6 md:w-7 h-6 md:h-7 rounded-full border border-gray cursor-pointer hover:shadow hover:shadow-gray">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="bi bi-twitter-x w-3 md:w-4 h-3 md:h-4 fill-white" viewBox="0 0 16 16">

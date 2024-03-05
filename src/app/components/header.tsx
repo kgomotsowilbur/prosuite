@@ -54,7 +54,7 @@ export default function Header() {
             </div>
         }
         {/* medium to big screens links */}
-        <div className="w-full hidden md:flex flex-row justify-end gap-10">
+        <div className="w-full hidden md:flex flex-row justify-end gap-4 xl:gap-10">
             {
                 arrHead?.map((value, index) => (
                     <div key={index} className="flex flex-col justify-center h-full">

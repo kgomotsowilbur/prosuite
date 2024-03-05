@@ -6,7 +6,7 @@ import GetStartedButton from "./getStartedButton";
 
 export default function HomePage() {
     return (
-      <div className="w-full h-full pt-2 md:pt-4 flex flex-col md:flex-row">
+      <div className="w-full h-auto pt-2 md:pt-4 flex flex-col justify-center md:flex-row">
         <div className="grid md:hidden place-items-center h-52 xl:h-full">
             <Image
                 alt=""
@@ -16,7 +16,7 @@ export default function HomePage() {
                 className="w-auto h-52 xl:h-full"
             />
         </div>
-        <div className="flex flex-col md:h-full justify-center w-[80%]">
+        <div className="flex flex-col md:h-full justify-center md:w-[80%]">
             <div className="flex flex-col h-fit gap-4">
                 <div className="flex flex-col">
                     <h1 className="font-opensans text-suite text-xl md:text-2xl">Welcome to Prosuite</h1>
