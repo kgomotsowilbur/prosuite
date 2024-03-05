@@ -13,7 +13,11 @@ const openSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Prosuite"
+  title: "Prosuite",
+  icons: {
+    icon: ['/favicon.png'],
+    shortcut: ['/favicon.png']
+  }
 };
 
 export default function RootLayout({
