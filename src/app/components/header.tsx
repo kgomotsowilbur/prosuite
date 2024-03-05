@@ -18,7 +18,7 @@ export default function Header() {
                 src="/logo.png"
                 width={199}
                 height={70}
-                className="h-auto w-48"
+                className="h-auto w-44 md:w-48"
             />
         </div>
         <div className="w-full md:hidden flex flex-row justify-end">
